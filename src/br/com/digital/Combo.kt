@@ -1,10 +1,10 @@
 package br.com.digital
 
-abstract class Combo (val listaProdutos: MutableList<Produto>, val desconto: Float, val nome: String) {
-    var preco: Float = 0.0f
+class Combo (val listaItens: MutableList<Item>, val desconto: Float, nome: String) : Item(nome){
+    override var preco: Float = 0.0f
 
     init {
-        listaProdutos.forEach {
+        listaItens.forEach {
             preco += it.preco * (1 - desconto)
         }
 

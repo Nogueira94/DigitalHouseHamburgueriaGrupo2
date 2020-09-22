@@ -1,5 +1,5 @@
 package br.com.digital
 
-data class Produto (val nome:String, var preco:Float) {
+class Produto (nome:String, override var preco:Float) : Item(nome){
 
 }
