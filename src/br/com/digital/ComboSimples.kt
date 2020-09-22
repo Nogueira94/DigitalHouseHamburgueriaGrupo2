@@ -1,6 +1,6 @@
 package br.com.digital
 
-abstract class Combo (val listaProdutos: MutableList<Produto>, val desconto: Float, val nome: String) {
+class ComboSimples(val listaProdutos: MutableList<Produto>, val desconto: Float, val nome: String) {
     var preco: Float = 0.0f
 
     init {
